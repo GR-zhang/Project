@@ -1,0 +1,153 @@
+//**** 原子类 ****
+// 文本颜色
+.text_red {
+  color: #f56c6c!important;
+}
+.text_green {
+  color: #67C23A!important;
+}
+.text_grey {
+  color: #909399!important;
+}
+
+// text-align
+.text_left {
+  text-align: left;
+}
+.text_center {
+  text-align: center;
+}
+.text_right {
+  text-align: right;
+}
+
+// flex布局
+.flex_row_sb_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_row_start_start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.flex_row_sa_center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex_row_start_center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex_row_center_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// margin
+.mb_10 {
+  margin-bottom: 10px!important;
+}
+.mb_18 {
+  margin-bottom: 18px;
+}
+.mr_10 {
+  margin-right: 10px!important;
+}
+.m_x_10 {
+  margin: 10px 0;
+}
+//padding
+.pt_10 {
+  padding-top: 10px;
+}
+.p_x_30 {
+  padding: 0 30px;
+}
+
+// font
+.font_20 {
+  font-size: 20px;
+}
+
+// border
+.border_top {
+  border-top: 1px solid #ebeef5;
+}
+
+// 多行隐藏
+@mixin textoverflow($clamp:1) {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $clamp;
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+.textoverflow_1 {
+  @include textoverflow(1);
+}
+.textoverflow_2 {
+  @include textoverflow(2);
+}
+
+//**** 项目类 ****
+// 卡片样式
+.table_card {
+  padding: 10px 15px 15px;
+  background-color: #fff;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+.form_card {
+  padding: 15px 15px 0;
+  background-color: #fff;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+// 表单控件tip
+.form_control_tip {
+  color: #909399;
+  font-size: 12px;
+  line-height: 15px;
+}
+// 设置页面表单控件宽度
+.set_fcw {
+  min-width: 300px;
+  max-width: 450px;
+}
+
+// 页面tip
+.page_tip {
+  color: #909399;
+  font-size: 14.5px;
+  line-height: 22px;
+}
+
+
+// 页面标题
+.page_title {
+  padding: 5px 0 15px 0;
+  color: #606266;
+  font-weight: bold;
+}
+.sec_title {
+  font-size: 15px;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+
+// 抽屉操作按钮
+.drawer-operation-btn {
+  height: 60px;line-height: 60px;
+  text-align: center;
+  border-top: 1px solid #ebeef5;
+}
+

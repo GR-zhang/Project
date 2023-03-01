@@ -1,0 +1,11 @@
+.multi-lang-tabs.el-tabs--border-card {
+  border: none!important;
+  box-shadow: none!important;;
+  margin-bottom: 0!important;
+  .el-tabs__header {
+    display: none!important;
+  }
+  .el-tabs__content {
+    padding: 15px 0;
+  }
+}

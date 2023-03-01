@@ -1,0 +1,8 @@
+export { default as CollectionAddOrEditDrawer } from './CollectionAddOrEditDrawer/index'
+export { default as CollectionPublishDialog } from './CollectionPublishDialog'
+export { default as GoodsListDialog } from './GoodsListDialog'
+export { default as CollectionAuditDialog } from './CollectionAuditDialog'
+export { default as GoodsEditDialog } from './GoodsEditDialog'
+export { default as GoodsFlowRecordDialog } from './GoodsFlowRecordDialog'
+export { default as SeriesAddOrEditDialog } from './SeriesAddOrEditDialog/index.vue'
+export { default as IssuerAddOrEditDialog } from './IssuerAddOrEditDialog/index.vue'
