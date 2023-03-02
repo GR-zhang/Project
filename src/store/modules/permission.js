@@ -114,12 +114,11 @@ const actions = {
       let routes_filter = filterAsyncRoutes(asyncRoutes, authRouteNames);
       // console.log('routes_filter', routes_filter);
       let accessedRoutes = retrofitRoutes(routes_filter, authBtnNames);
-      console.log('accessedRoutes', accessedRoutes, myRoute, JSON.parse(JSON.stringify(accessedRoutes))[3]);
 
-      const newRoutes = [...JSON.parse(JSON.stringify(accessedRoutes)), ...myRoute];
-      commit('SET_ROUTES', newRoutes)
+      accessedRoutes.push(myRoute[0])
+      commit('SET_ROUTES', accessedRoutes)
       commit('SET_ROUTES_STATU', true)
-      resolve(newRoutes)
+      resolve(accessedRoutes)
     })
   }
 }
